@@ -2,6 +2,7 @@ package com.example.monsyndic.fragements;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +12,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.monsyndic.Bien;
+import com.example.monsyndic.Maps_Activity;
+import com.example.monsyndic.MonProfil;
+import com.example.monsyndic.Paiement;
 import com.example.monsyndic.R;
+import com.example.monsyndic.Reclamation;
+import com.example.monsyndic.Situation;
 
 
 public class HomeFragment extends Fragment {
@@ -33,37 +40,37 @@ public class HomeFragment extends Fragment {
         PaiementImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), PaiementsFragment.class));
+                startActivity(new Intent(getActivity(), Paiement.class));
             }
         });
         ProfilImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), ProfileFragment.class));
+                startActivity(new Intent(getActivity(), MonProfil.class));
             }
         });
         DocumentImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), DocumentsFragment.class));
+                startActivity(new Intent(getActivity(), Document.class));
             }
         });
         ReclamationImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), ReclamationsFragment.class));
+                startActivity(new Intent(getActivity(), Reclamation.class));
             }
         });
         BienImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), BienFragment.class));
+                startActivity(new Intent(getActivity(), Bien.class));
             }
         });
         SituationImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), SituationFragment.class));
+                startActivity(new Intent(getActivity(), Maps_Activity.class));
             }
         });
 

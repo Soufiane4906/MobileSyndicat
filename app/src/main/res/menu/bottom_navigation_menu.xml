@@ -2,21 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/menu_home"
-        android:icon="@drawable/home"
+        android:icon="@drawable/homep"
         android:title="Home" />
     <item
         android:id="@+id/menu_contact"
-        android:icon="@drawable/home"
+        android:icon="@drawable/conta"
 
         android:title="Contact" />
     <item
-        android:id="@+id/menu_profile"
-        android:icon="@drawable/home"
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/settin"
 
         android:title="Settings" />
     <item
         android:id="@+id/menu_signout"
-        android:icon="@drawable/home"
+        android:icon="@drawable/signout"
 
         android:title="Sign Out" />
 </menu>
